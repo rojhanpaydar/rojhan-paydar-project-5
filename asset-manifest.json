@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/rojhan-paydar-project-5/static/css/main.5f361e03.chunk.css",
-    "main.js": "/rojhan-paydar-project-5/static/js/main.3550a500.chunk.js",
-    "main.js.map": "/rojhan-paydar-project-5/static/js/main.3550a500.chunk.js.map",
+    "main.css": "/rojhan-paydar-project-5/static/css/main.39d51acd.chunk.css",
+    "main.js": "/rojhan-paydar-project-5/static/js/main.335c7f70.chunk.js",
+    "main.js.map": "/rojhan-paydar-project-5/static/js/main.335c7f70.chunk.js.map",
     "runtime-main.js": "/rojhan-paydar-project-5/static/js/runtime-main.2b7849a4.js",
     "runtime-main.js.map": "/rojhan-paydar-project-5/static/js/runtime-main.2b7849a4.js.map",
-    "static/js/2.71256099.chunk.js": "/rojhan-paydar-project-5/static/js/2.71256099.chunk.js",
-    "static/js/2.71256099.chunk.js.map": "/rojhan-paydar-project-5/static/js/2.71256099.chunk.js.map",
+    "static/js/2.7d2715d2.chunk.js": "/rojhan-paydar-project-5/static/js/2.7d2715d2.chunk.js",
+    "static/js/2.7d2715d2.chunk.js.map": "/rojhan-paydar-project-5/static/js/2.7d2715d2.chunk.js.map",
     "index.html": "/rojhan-paydar-project-5/index.html",
-    "precache-manifest.0279ab6fe1566be843671f18efd43c51.js": "/rojhan-paydar-project-5/precache-manifest.0279ab6fe1566be843671f18efd43c51.js",
+    "precache-manifest.e06f2adc3ed35a83be09801686e802c2.js": "/rojhan-paydar-project-5/precache-manifest.e06f2adc3ed35a83be09801686e802c2.js",
     "service-worker.js": "/rojhan-paydar-project-5/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/rojhan-paydar-project-5/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.71256099.chunk.js.LICENSE.txt": "/rojhan-paydar-project-5/static/js/2.71256099.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/rojhan-paydar-project-5/static/media/logo.5d5d9eef.svg"
+    "static/css/main.39d51acd.chunk.css.map": "/rojhan-paydar-project-5/static/css/main.39d51acd.chunk.css.map",
+    "static/js/2.7d2715d2.chunk.js.LICENSE.txt": "/rojhan-paydar-project-5/static/js/2.7d2715d2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2b7849a4.js",
-    "static/js/2.71256099.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.3550a500.chunk.js"
+    "static/js/2.7d2715d2.chunk.js",
+    "static/css/main.39d51acd.chunk.css",
+    "static/js/main.335c7f70.chunk.js"
   ]
 }
