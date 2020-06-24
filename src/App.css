@@ -2,6 +2,7 @@ html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  color: #ffff;
 }
 body {
   margin: 0;
@@ -240,7 +241,7 @@ img {
 font-family: 'Raleway', sans-serif; */
 
 body {
-  background-color: #fffee5;
+  background-color: #1b1b1b;
 }
 
 .wrapper {
@@ -258,9 +259,15 @@ body {
 button {
   align-self: center;
   padding: 2%;
-  background: white;
+  background: #f9c932;
   border: 2px solid #000000;
-  border-radius: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+button:focus,
+button:hover {
+  border: 2px dotted black;
 }
 
 h1 {
@@ -268,6 +275,8 @@ h1 {
   width: 50%;
   margin-bottom: 5%;
   font-family: "Abril Fatface", cursive;
+  display: flex;
+  align-self: flex-start;
 }
 
 p {
@@ -276,27 +285,15 @@ p {
   margin-bottom: 5%;
 }
 
-/* form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-
-label {
-  font-size: 50px;
-  font-family: "Raleway", sans-serif;
-}
-
-select {
-  font-size: 20px;
-}
-
 ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #fa9c92;
+  margin-top: 5%;
+  border-radius: 30px;
+  padding: 5%;
 }
 
 li {
@@ -308,4 +305,51 @@ li {
 li:first-child {
   font-family: "Abril Fatface", cursive;
   font-size: 50px;
+}
+
+#slide {
+  position: relative;
+  left: -900px;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide {
+  100% {
+    left: 0;
+  }
+}
+
+/* media queries */
+/* tablet size */
+
+@media (max-width: 800px) {
+  #slide {
+    position: none;
+    left: 0;
+    width: 0;
+    height: 0;
+    animation: none;
+  }
+
+  .flexContainer {
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20%;
+  }
 }

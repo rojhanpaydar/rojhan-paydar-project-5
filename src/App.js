@@ -39,9 +39,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="wrapper">
+        <div className="wrapper position">
           <div className="flexContainer">
-            <h1>Foodie&Find</h1>
+            <h1 id="slide">Foodie&Find</h1>
             <p>
               For when you really can't decide on where to eat. We promise we
               won't give you an "I don't know, what do you want?" in response.
