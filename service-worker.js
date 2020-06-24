@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/rojhan-paydar-project-5/precache-manifest.e06f2adc3ed35a83be09801686e802c2.js"
+  "/rojhan-paydar-project-5/precache-manifest.4c650a66e0a23a9ff5b5bcdbe2ebbc6f.js"
 );
 
 self.addEventListener('message', (event) => {
