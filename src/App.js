@@ -53,28 +53,26 @@ class App extends Component {
               ;)
             </p>
             <button onClick={this.getRestaurants}>TIME FOR FOOD</button>
-          </div>
-          {/* <Form getRestaurants={this.getRestaurants} /> */}
-          {/* SHOW RESTAURANTS HERE */}
-          {this.state.restaurants.map((rest) => {
-            // console.log(rest);
-            return (
-              <div className="flexContainer2">
+            {/* <Form getRestaurants={this.getRestaurants} /> */}
+            {/* SHOW RESTAURANTS HERE */}
+            {this.state.restaurants.map((rest) => {
+              // console.log(rest);
+
+              // need make accessible tab through the restaurant titles tomorrow
+              return (
                 <ul key={rest.id}>
-                  <div>
-                    <li>Restaurant: {rest.name}</li>
-                    <li>
-                      <Image image={rest} />
-                    </li>
-                    <li>Hours: {rest.timings}</li>
-                    <li>Menu: {rest.menu_url}</li>
-                    <li>Cuisine: {rest.cuisines}</li>
-                    <li>Location: {rest.location.address}</li>
-                  </div>
+                  <li>Restaurant: {rest.name}</li>
+                  <li>
+                    <Image image={rest} />
+                  </li>
+                  <li>Hours: {rest.timings}</li>
+                  <li>Menu: {rest.menu_url}</li>
+                  <li>Cuisine: {rest.cuisines}</li>
+                  <li>Location: {rest.location.address}</li>
                 </ul>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
     );
