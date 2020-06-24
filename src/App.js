@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import Form from "./Form";
+// import Form from './Form';
 import axios from "axios";
 import "./App.css";
-
+// import Form from "./Form";
+import Image from "./Image";
 class App extends Component {
   constructor() {
     super();
@@ -11,6 +12,8 @@ class App extends Component {
       restaurantChoices: [],
     };
   }
+
+  // math.random function --> function name to call. put variable on line 29 for count or start which ever you want to start from. randomize start location within the API. Choose a range to work with.
 
   getRestaurants = (event) => {
     event.preventDefault();
@@ -23,36 +26,58 @@ class App extends Component {
         "user-key": "6dd0b6c953cd598dfe6caa540847c370",
       },
       params: {
-        count: 100,
+        count: 10,
         start: 20,
       },
     }).then((restaurants) => {
-      console.log(restaurants);
-      restaurants = restaurants.data;
+      restaurants = restaurants.data.restaurants;
       const newState = [];
       for (let key in restaurants) {
-        console.log(restaurants);
-        newState.push(restaurants[key][0]);
+        newState.push(restaurants[key].restaurant);
       }
       this.setState({
         restaurants: newState,
       });
     });
   };
-
   render() {
+    // console.log(this.state.restaurants);
     return (
       <div className="App">
-        <h1>Pick a restaurant!</h1>
-        <Form getRestaurants={this.getRestaurants} />
-
-        {/* SHOW RESTAURANTS HERE */}
-        {/* {this.state.restaurants.map((rest) => {
-          return <h2 key={rest.id}>{rest.name}</h2>;
-        })} */}
+        <div className="wrapper">
+          <div className="flexContainer">
+            <h1>Foodie&Find</h1>
+            <p>
+              For when you really can't decide on where to eat. We promise we
+              won't give you an "I don't know, what do you want?" in response.
+              ;)
+            </p>
+            <button onClick={this.getRestaurants}>TIME FOR FOOD</button>
+          </div>
+          {/* <Form getRestaurants={this.getRestaurants} /> */}
+          {/* SHOW RESTAURANTS HERE */}
+          {this.state.restaurants.map((rest) => {
+            // console.log(rest);
+            return (
+              <div className="flexContainer2">
+                <ul key={rest.id}>
+                  <div>
+                    <li>Restaurant: {rest.name}</li>
+                    <li>
+                      <Image image={rest} />
+                    </li>
+                    <li>Hours: {rest.timings}</li>
+                    <li>Menu: {rest.menu_url}</li>
+                    <li>Cuisine: {rest.cuisines}</li>
+                    <li>Location: {rest.location.address}</li>
+                  </div>
+                </ul>
+              </div>
+            );
+          })}
+        </div>
       </div>
     );
   }
 }
-
 export default App;

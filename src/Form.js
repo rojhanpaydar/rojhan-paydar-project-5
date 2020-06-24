@@ -11,9 +11,7 @@ class Form extends Component {
   handleChange = (event) => {
     this.setState({
       userSelection: event.target.value,
-      selectedRestaurants: this.state.restaurant[
-        Math.floor(Math.random() * this.state.restaurant.length)
-      ],
+      selectedRestaurants: this.state.restaurant,
     });
   };
 
@@ -29,6 +27,7 @@ class Form extends Component {
           <option value="orderOfThePhoenix">Order of The Phoenix</option>
         </select>
         {/* user anon callback func to pass argument to the filter wizards function */}
+
         <button onClick={this.props.getRestaurants}>Find me some food!</button>
       </form>
     );
