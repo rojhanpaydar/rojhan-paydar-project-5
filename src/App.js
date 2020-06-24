@@ -1,19 +1,14 @@
 import React, { Component } from "react";
-// import Form from './Form';
 import axios from "axios";
 import "./App.css";
-// import Form from "./Form";
 import Image from "./Image";
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      restaurants: [],
-      restaurantChoices: [],
+      randomRestaurants: null,
     };
   }
-
-  // math.random function --> function name to call. put variable on line 29 for count or start which ever you want to start from. randomize start location within the API. Choose a range to work with.
 
   getRestaurants = (event) => {
     event.preventDefault();
@@ -26,8 +21,7 @@ class App extends Component {
         "user-key": "6dd0b6c953cd598dfe6caa540847c370",
       },
       params: {
-        count: 10,
-        start: 20,
+        count: 20,
       },
     }).then((restaurants) => {
       restaurants = restaurants.data.restaurants;
@@ -37,11 +31,12 @@ class App extends Component {
       }
       this.setState({
         restaurants: newState,
+        randomRestaurants:
+          newState[Math.floor(Math.random() * newState.length)],
       });
     });
   };
   render() {
-    // console.log(this.state.restaurants);
     return (
       <div className="App">
         <div className="wrapper">
@@ -53,25 +48,20 @@ class App extends Component {
               ;)
             </p>
             <button onClick={this.getRestaurants}>TIME FOR FOOD</button>
-            {/* <Form getRestaurants={this.getRestaurants} /> */}
-            {/* SHOW RESTAURANTS HERE */}
-            {this.state.restaurants.map((rest) => {
-              // console.log(rest);
-
-              // need make accessible tab through the restaurant titles tomorrow
-              return (
-                <ul key={rest.id}>
-                  <li>Restaurant: {rest.name}</li>
-                  <li>
-                    <Image image={rest} />
-                  </li>
-                  <li>Hours: {rest.timings}</li>
-                  <li>Menu: {rest.menu_url}</li>
-                  <li>Cuisine: {rest.cuisines}</li>
-                  <li>Location: {rest.location.address}</li>
-                </ul>
-              );
-            })}
+            {this.state.randomRestaurants ? (
+              <ul>
+                <li>Restaurant: {this.state.randomRestaurants.name}</li>
+                <li>
+                  <Image image={this.state.randomRestaurants} />
+                </li>
+                <li>Hours: {this.state.randomRestaurants.timings}</li>
+                <li>Menu: {this.state.randomRestaurants.menu_url}</li>
+                <li>Cuisine: {this.state.randomRestaurants.cuisines}</li>
+                <li>
+                  Location: {this.state.randomRestaurants.location.address}
+                </li>
+              </ul>
+            ) : null}
           </div>
         </div>
       </div>
