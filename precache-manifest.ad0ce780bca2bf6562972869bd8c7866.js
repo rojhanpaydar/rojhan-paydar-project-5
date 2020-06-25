@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eb6f5cd85890b8b5da5003713600332b",
+    "revision": "e2f3f80bff3f5dc329525f4784dac637",
     "url": "/rojhan-paydar-project-5/index.html"
   },
   {
-    "revision": "79cf307af7501d47d128",
-    "url": "/rojhan-paydar-project-5/static/css/main.de85c7ab.chunk.css"
+    "revision": "2862eacdde99b9249a25",
+    "url": "/rojhan-paydar-project-5/static/css/main.2af91e61.chunk.css"
   },
   {
     "revision": "35770f317209c999c9f6",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rojhan-paydar-project-5/static/js/2.7d2715d2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "79cf307af7501d47d128",
+    "revision": "2862eacdde99b9249a25",
     "url": "/rojhan-paydar-project-5/static/js/main.51a919a8.chunk.js"
   },
   {
