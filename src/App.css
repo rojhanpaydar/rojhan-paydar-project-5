@@ -7,6 +7,7 @@ html {
 body {
   margin: 0;
 }
+
 article,
 aside,
 footer,
@@ -237,8 +238,9 @@ img {
   display: inline-block;
 }
 
-/* font-family: 'Abril Fatface', cursive;
-font-family: 'Raleway', sans-serif; */
+/* fonts used for this project: */
+/* font-family: 'Abril Fatface', cursive;*/
+/* font-family: 'Raleway', sans-serif;  */
 
 body {
   background-color: #1b1b1b;
@@ -256,6 +258,11 @@ body {
   flex-wrap: wrap;
 }
 
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 button {
   align-self: center;
   padding: 2%;
@@ -267,7 +274,12 @@ button {
 
 button:focus,
 button:hover {
-  border: 2px dotted black;
+  border: 2px dotted #000000;
+}
+
+li a:focus,
+li a:hover {
+  border-bottom: 3px solid #000000;
 }
 
 h1 {
@@ -307,15 +319,16 @@ li:first-child {
   font-size: 50px;
 }
 
+/* sliding animation for the title of the page */
 #slide {
   position: relative;
   left: -900px;
   width: 100px;
   height: 100px;
   -webkit-animation: slide 0.5s forwards;
-  -webkit-animation-delay: 2s;
+  -webkit-animation-delay: 0.4s;
   animation: slide 0.5s forwards;
-  animation-delay: 2s;
+  animation-delay: 0.4s;
 }
 
 @-webkit-keyframes slide {
@@ -351,5 +364,31 @@ li:first-child {
     font-size: 50px;
     text-align: center;
     margin-bottom: 20%;
+  }
+}
+/* cellphone size */
+@media (max-width: 375px) {
+  h1 {
+    font-size: 30px;
+    margin-bottom: 25%;
+    padding: 5%;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  li:first-child {
+    font-size: 20px;
+    padding: 5%;
+  }
+
+  li {
+    width: 100%;
+    padding: 5%;
   }
 }
