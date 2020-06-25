@@ -366,6 +366,16 @@ li:first-child {
     margin-bottom: 20%;
   }
 }
+
+/* text spilling issues */
+@media (max-width: 510px) {
+  li:first-child {
+    font-size: 18px;
+    padding: 5%;
+    margin-bottom: 25%;
+  }
+}
+
 /* cellphone size */
 @media (max-width: 375px) {
   h1 {
@@ -382,23 +392,8 @@ li:first-child {
     width: 100%;
   }
 
-  li:first-child {
-    font-size: 18px;
-    padding: 5%;
-  }
-
   li {
     width: 100%;
-    padding: 5%;
-  }
-}
-
-/* fixes smallest screens "restaurant" title from spilling out */
-
-@media (max-width: 360px) {
-  li:first-child {
-    font-size: 18px;
-    margin-bottom: 25%;
     padding: 5%;
   }
 }
