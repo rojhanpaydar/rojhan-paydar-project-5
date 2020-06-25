@@ -392,3 +392,13 @@ li:first-child {
     padding: 5%;
   }
 }
+
+/* fixes smallest screens "restaurant" title from spilling out */
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: 18px;
+    margin-bottom: 25%;
+    padding: 5%;
+  }
+}
