@@ -367,7 +367,7 @@ li:first-child {
   }
 }
 /* cellphone size */
-@media (max-width: 360px) {
+@media (max-width: 375px) {
   h1 {
     font-size: 28px;
     margin-bottom: 25%;
