@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/rojhan-paydar-project-5/static/css/main.e7115768.chunk.css",
+    "main.css": "/rojhan-paydar-project-5/static/css/main.5a18f236.chunk.css",
     "main.js": "/rojhan-paydar-project-5/static/js/main.51a919a8.chunk.js",
     "main.js.map": "/rojhan-paydar-project-5/static/js/main.51a919a8.chunk.js.map",
     "runtime-main.js": "/rojhan-paydar-project-5/static/js/runtime-main.2b7849a4.js",
@@ -8,15 +8,15 @@
     "static/js/2.7d2715d2.chunk.js": "/rojhan-paydar-project-5/static/js/2.7d2715d2.chunk.js",
     "static/js/2.7d2715d2.chunk.js.map": "/rojhan-paydar-project-5/static/js/2.7d2715d2.chunk.js.map",
     "index.html": "/rojhan-paydar-project-5/index.html",
-    "precache-manifest.e01ab69641c8370a9bce7586e08eb35e.js": "/rojhan-paydar-project-5/precache-manifest.e01ab69641c8370a9bce7586e08eb35e.js",
+    "precache-manifest.4982963f9926c73ed816dda5618e22f8.js": "/rojhan-paydar-project-5/precache-manifest.4982963f9926c73ed816dda5618e22f8.js",
     "service-worker.js": "/rojhan-paydar-project-5/service-worker.js",
-    "static/css/main.e7115768.chunk.css.map": "/rojhan-paydar-project-5/static/css/main.e7115768.chunk.css.map",
+    "static/css/main.5a18f236.chunk.css.map": "/rojhan-paydar-project-5/static/css/main.5a18f236.chunk.css.map",
     "static/js/2.7d2715d2.chunk.js.LICENSE.txt": "/rojhan-paydar-project-5/static/js/2.7d2715d2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2b7849a4.js",
     "static/js/2.7d2715d2.chunk.js",
-    "static/css/main.e7115768.chunk.css",
+    "static/css/main.5a18f236.chunk.css",
     "static/js/main.51a919a8.chunk.js"
   ]
 }
