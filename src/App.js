@@ -45,31 +45,37 @@ class App extends Component {
             <p>
               For when you really can't decide on where to eat. We promise we
               won't give you an "I don't know, what do you want?" in response.
-              😜 (*hint: click until you find a restaurant you like!)
+              <span role="img" aria-label="winking emoji face">😜</span> (*hint: click until you find a restaurant you like!)
             </p>
-            <button onClick={this.getRestaurants}>🍟 TIME FOR FOOD 🍣</button>
+            <button onClick={this.getRestaurants}><span role="img" aria-label="emoji of french fries">🍟 </span>TIME FOR FOOD <span role="img" aria-label="emoji of sushi">🍣</span></button>
             {this.state.randomRestaurants ? (
               <ul>
                 <li>Restaurant: {this.state.randomRestaurants.name}</li>
                 <li>
                   <Image image={this.state.randomRestaurants} />
                 </li>
-                <li>Cuisine: {this.state.randomRestaurants.cuisines}</li>
                 <li>
-                  Location: {this.state.randomRestaurants.location.address}
-                </li>
-                <li>Area: {this.state.randomRestaurants.location.locality}</li>
-                <li>Hours: {this.state.randomRestaurants.timings}</li>
-                <li>
-                  Menu:{" "}
-                  <a href={this.state.randomRestaurants.menu_url}>click here</a>
+                  <h2>Cuisine:</h2> {this.state.randomRestaurants.cuisines}
                 </li>
                 <li>
-                  Average Cost For Two: $
+                  <h2>Location:</h2> {this.state.randomRestaurants.location.address}
+                </li>
+                <li>
+                  <h2>Area:</h2> {this.state.randomRestaurants.location.locality}
+                </li>
+                <li>
+                  <h2>Hours:</h2> {this.state.randomRestaurants.timings}
+                </li>
+                <li>
+                  <h2>Menu: </h2>{" "}
+                  <a href={this.state.randomRestaurants.menu_url}><span class="menuLink">CLICK HERE!</span></a>
+                </li>
+                <li>
+                  <h2>Average Cost For Two:</h2> $
                   {this.state.randomRestaurants.average_cost_for_two}
                 </li>
                 <li>
-                  Phone Number: {this.state.randomRestaurants.phone_numbers}
+                  <h2>Phone Number:</h2> {this.state.randomRestaurants.phone_numbers}
                 </li>
               </ul>
             ) : null}
