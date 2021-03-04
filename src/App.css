@@ -295,6 +295,7 @@ p {
   font-size: 30px;
   font-family: "Raleway", sans-serif;
   margin-bottom: 5%;
+  text-align: center
 }
 
 ul {
@@ -315,6 +316,8 @@ li {
   font-size: 25px;
   font-family: "Raleway", sans-serif;
   color: #1b1b1b;
+  text-align: center;
+  
 }
 
 li:first-child {
@@ -326,9 +329,10 @@ h2 {
   font-family: 'Abril Fatface', cursive;
   font-size: 25px; 
   display: inline-block;
+  text-align: center;
 }
 
-.menuLink {
+.linkStyles {
   border: 2px solid black; 
   border-top: none;
   border-left: none;
@@ -389,19 +393,18 @@ h2 {
   li:first-child {
     font-size: 18px;
     padding: 5%;
-    margin-bottom: 25%;
   }
 }
 
 /* cellphone size */
-@media (max-width: 375px) {
-  h1 {
+@media (max-width: 435px) {
+  h1, h2 {
     font-size: 28px;
     margin-bottom: 25%;
     padding: 5%;
   }
 
-  p {
+  p, li {
     font-size: 20px;
   }
 
