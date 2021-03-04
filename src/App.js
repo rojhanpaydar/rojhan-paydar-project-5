@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import "./App.css";
 import Image from "./Image";
+
 class App extends Component {
   constructor() {
     super();
@@ -39,6 +40,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <header>
+
         <div className="wrapper position">
           <div className="flexContainer">
             <h1 id="slide">Foodie&Find</h1>
@@ -50,37 +53,38 @@ class App extends Component {
             <button onClick={this.getRestaurants}><span role="img" aria-label="emoji of french fries">🍟 </span>TIME FOR FOOD <span role="img" aria-label="emoji of sushi">🍣</span></button>
             {this.state.randomRestaurants ? (
               <ul>
-                <li tabindex="1">Restaurant: {this.state.randomRestaurants.name}</li>
+                <li>Restaurant: {this.state.randomRestaurants.name}</li>
                 <li>
                   <Image image={this.state.randomRestaurants} />
                 </li>
-                <li tabindex="2">
+                <li>
                   <h2>Cuisine:</h2> {this.state.randomRestaurants.cuisines}
                 </li>
-                <li tabindex="3">
+                <li>
                   <h2>Location:</h2> {this.state.randomRestaurants.location.address}
                 </li>
-                <li tabindex="4">
+                <li>
                   <h2>Area:</h2> {this.state.randomRestaurants.location.locality}
                 </li>
-                <li tabindex="5">
+                <li>
                   <h2>Hours:</h2> {this.state.randomRestaurants.timings}
                 </li>
-                <li tabindex="6">
+                <li>
                   <h2>Menu: </h2>{" "}
-                  <a href={this.state.randomRestaurants.menu_url}><span class="linkStyles">CLICK HERE!</span></a>
+                  <a href={this.state.randomRestaurants.menu_url}><span className="linkStyles">LINK TO MENU HERE</span></a>
                 </li>
-                <li tabindex="7">
+                <li>
                   <h2>Average Cost For Two:</h2> $
                   {this.state.randomRestaurants.average_cost_for_two}
                 </li>
-                <li tabindex="8">
-                  <h2>Phone Number:</h2> <a class="linkStyles" href="tel:">{this.state.randomRestaurants.phone_numbers}</a>
+                <li>
+                  <h2>Phone Number:</h2> <a className="linkStyles" href="tel:" aria-label="telephone number">{this.state.randomRestaurants.phone_numbers}</a>
                 </li>
               </ul>
             ) : null}
           </div>
         </div>
+      </header>
       </div>
     );
   }
